@@ -8,7 +8,8 @@ import { IdiomasComponent } from './page/idiomas/idiomas.component';
 import { ResenasComponent } from './page/resenas/resenas.component';
 import { ResenasListarComponent } from './page/resenas/resenas-listar/resenas-listar.component';
 import { IdiomasListarComponent } from './page/idiomas/idiomas-listar/idiomas-listar.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,9 @@ import { IdiomasListarComponent } from './page/idiomas/idiomas-listar/idiomas-li
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
