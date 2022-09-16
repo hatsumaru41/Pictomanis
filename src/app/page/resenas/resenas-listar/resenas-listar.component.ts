@@ -9,7 +9,8 @@ import { Resenas } from 'src/app/model/reseñas';
 })
 export class ResenasListarComponent implements OnInit {
 dataSource:MatTableDataSource<Resenas>=new MatTableDataSource();
-  constructor(private ps:ResenasService) { }
+displayedColumns:string[]=['id','nameResenas','descripcionResenas'];  
+constructor(private ps:ResenasService) { }
 
   ngOnInit(): void {
     this.ps.listar().subscribe(data=>{
